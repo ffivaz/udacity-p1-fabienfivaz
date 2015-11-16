@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fabien Fivaz | projects portofolio</title>
+
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lato:700,400,100,100italic,400italic,700italic">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="row">
+        <div class="col-md-3 col-xs-3"><img src="images/logo.png" class="logo" alt="Logo"></div>
+        <div class="col-md-9 col-xs-9 text-right text-uppercase">
+            <h1 class="text-thin">fabien fivaz</h1>
+
+            <h2>projects portofolio</h2>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </div>
+    <div class="row main-image">
+        <div class="col-md-12">
+            <picture>
+                <img src="images/barbed_wire_small.jpg"
+                     srcset="images/barbed_wire_small.jpg 285w, images/barbed_wire_medium.jpg 570w, images/barbed_wire_large.jpg 1140w"
+                     sizes="100vw"
+                     class="img-responsive"
+                     alt="Main image, showing barbed wire.">
+            </picture>
+            <p class=" text-right text-citation"><em>And this our life, exempt from public haunt,
+                Finds tongues in trees, books in the running brooks,
+                Sermons in stones, and good in everything.</em><br>
+                (William Shakespeare, <em>As You Like It</em>)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-muted">Featured Work</h3>
+        </div>
+    </div>
+    <section class="row text-center">
+        <div class="col-md-4  col-sm-4 col-xs-6">
+            <figure data-toggle="modal" data-target="#booksModal">
+                <img src="images/project1_small.jpg"
+                     srcset="images/project1_small.jpg 125w, images/project1_medium.jpg 250w, images/project1_large.jpg 500w"
+                     sizes="(min-width: 600px): 33.3vw, 50vw"
+                     class="img-responsive"
+                     alt="A book">
+                <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
+            </figure>
+
+            <h4 class="text-app-titles">book</h4>
+
+            <p><a href="http://github.com">Sources on Github</a></p>
+        </div>
+        <div class="col-md-4  col-sm-4 col-xs-6">
+            <figure data-toggle="modal" data-target="#riversModal">
+                <img src="images/project2_small.jpg"
+                     srcset="images/project2_small.jpg 125w, images/project2_medium.jpg 250w, images/project2_large.jpg 500w"
+                     sizes="(min-width: 600px): 33.3vw, 50vw"
+                     class="img-responsive"
+                     alt="A brook">
+                <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
+            </figure>
+            <h4 class="text-app-titles">brook</h4>
+
+            <p><a href="http://github.com">Sources on Github</a></p>
+        </div>
+        <div class="col-md-4  col-sm-4 col-xs-6">
+            <figure data-toggle="modal" data-target="#citiesModal">
+                <img src="images/project3_small.jpg"
+                     srcset="images/project3_small.jpg 125w, images/project3_medium.jpg 250w, images/project3_large.jpg 500w"
+                     sizes="(min-width: 600px): 33.3vw, 50vw"
+                     class="img-responsive"
+                     alt="A city place with a stone">
+                <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
+            </figure>
+            <h4 class="text-app-titles">stone</h4>
+
+            <p><a href="http://github.com">Sources on Github</a></p>
+        </div>
+    </section>
+    <div class="row text-center">
+        <div class="col-md-12">
+                <span class="glyphicon glyphicon-menu-up button-up" aria-hidden="true" id="back-to-top-button"></span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for the first picture - book -->
+<div class="modal fade" id="booksModal" tabindex="-1" role="dialog" aria-labelledby="booksModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-uppercase">book</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ipsum eu dui mattis accumsan.
+                    Phasellus in quam vitae felis accumsan vulputate. Aenean sit amet pellentesque lacus. Integer ac
+                    lacinia nibh, vitae convallis risus. Pellentesque ultricies iaculis nisi sit amet blandit. Curabitur
+                    viverra, nulla ac feugiat ultricies, ante enim ultricies tortor, eget scelerisque mi lacus at justo.
+                    Curabitur vitae mi id nisi feugiat consectetur quis vitae leo. Phasellus non lorem quis risus
+                    pretium laoreet sit amet nec ex. Donec finibus nibh id aliquam bibendum. Phasellus venenatis arcu
+                    eros, non sollicitudin lorem scelerisque sit amet. Donec mollis nibh risus, molestie cursus ligula
+                    faucibus vel. Mauris a felis in lectus rutrum porta. Pellentesque laoreet risus quis eros
+                    pellentesque iaculis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.</p>
+
+                <p>Duis rhoncus sagittis hendrerit. Proin sit amet libero vestibulum, euismod elit vel, mollis nulla.
+                    Nullam enim quam, luctus id pulvinar eget, fermentum vel nunc. Vivamus dapibus enim velit, in
+                    tristique nisl finibus tempor. Curabitur semper felis eget nisl pulvinar, vel hendrerit tortor
+                    sagittis. Curabitur venenatis luctus nisl, nec tempus arcu interdum et. Aliquam commodo quam sed
+                    tortor posuere pretium. Ut sit amet nisi at velit maximus cursus tempor quis augue. Vivamus pretium
+                    ex non tristique gravida.</p>
+
+                <p><a href="http://github.com">Sources on Github</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for the second picture - brook -->
+<div class="modal fade" id="riversModal" tabindex="-1" role="dialog" aria-labelledby="riversModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-uppercase">brook</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ipsum eu dui mattis accumsan.
+                    Phasellus in quam vitae felis accumsan vulputate. Aenean sit amet pellentesque lacus. Integer ac
+                    lacinia nibh, vitae convallis risus. Pellentesque ultricies iaculis nisi sit amet blandit. Curabitur
+                    viverra, nulla ac feugiat ultricies, ante enim ultricies tortor, eget scelerisque mi lacus at justo.
+                    Curabitur vitae mi id nisi feugiat consectetur quis vitae leo. Phasellus non lorem quis risus
+                    pretium laoreet sit amet nec ex. Donec finibus nibh id aliquam bibendum. Phasellus venenatis arcu
+                    eros, non sollicitudin lorem scelerisque sit amet. Donec mollis nibh risus, molestie cursus ligula
+                    faucibus vel. Mauris a felis in lectus rutrum porta. Pellentesque laoreet risus quis eros
+                    pellentesque iaculis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.</p>
+
+                <p>Duis rhoncus sagittis hendrerit. Proin sit amet libero vestibulum, euismod elit vel, mollis nulla.
+                    Nullam enim quam, luctus id pulvinar eget, fermentum vel nunc. Vivamus dapibus enim velit, in
+                    tristique nisl finibus tempor. Curabitur semper felis eget nisl pulvinar, vel hendrerit tortor
+                    sagittis. Curabitur venenatis luctus nisl, nec tempus arcu interdum et. Aliquam commodo quam sed
+                    tortor posuere pretium. Ut sit amet nisi at velit maximus cursus tempor quis augue. Vivamus pretium
+                    ex non tristique gravida.</p>
+
+                <p><a href="http://github.com">Sources on Github</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for the third picture - stone -->
+<div class="modal fade" id="citiesModal" tabindex="-1" role="dialog" aria-labelledby="citiesModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-uppercase">stone</h4>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ipsum eu dui mattis accumsan.
+                    Phasellus in quam vitae felis accumsan vulputate. Aenean sit amet pellentesque lacus. Integer ac
+                    lacinia nibh, vitae convallis risus. Pellentesque ultricies iaculis nisi sit amet blandit. Curabitur
+                    viverra, nulla ac feugiat ultricies, ante enim ultricies tortor, eget scelerisque mi lacus at justo.
+                    Curabitur vitae mi id nisi feugiat consectetur quis vitae leo. Phasellus non lorem quis risus
+                    pretium laoreet sit amet nec ex. Donec finibus nibh id aliquam bibendum. Phasellus venenatis arcu
+                    eros, non sollicitudin lorem scelerisque sit amet. Donec mollis nibh risus, molestie cursus ligula
+                    faucibus vel. Mauris a felis in lectus rutrum porta. Pellentesque laoreet risus quis eros
+                    pellentesque iaculis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.</p>
+
+                <p>Duis rhoncus sagittis hendrerit. Proin sit amet libero vestibulum, euismod elit vel, mollis nulla.
+                    Nullam enim quam, luctus id pulvinar eget, fermentum vel nunc. Vivamus dapibus enim velit, in
+                    tristique nisl finibus tempor. Curabitur semper felis eget nisl pulvinar, vel hendrerit tortor
+                    sagittis. Curabitur venenatis luctus nisl, nec tempus arcu interdum et. Aliquam commodo quam sed
+                    tortor posuere pretium. Ut sit amet nisi at velit maximus cursus tempor quis augue. Vivamus pretium
+                    ex non tristique gravida.</p>
+
+                <p><a href="http://github.com">Sources on Github</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

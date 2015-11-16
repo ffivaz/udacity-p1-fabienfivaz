@@ -149,6 +149,9 @@ figure:hover {
     left: 0;
 }
 
+/* Boostrap Glyphs are used to put a "Back to top" button at the bottom.
+The following code is used to change the pointer and opacity when the glyph <span ...> is hovered */
+
 .button-up {
     padding-top: 20px;
     color: #4f4f4f;

@@ -3,11 +3,14 @@
 Here are a couple of general comments about the file.
     - Bootstrap is used for basic layout and responsiveness
     - @media is used for responsiveness as well (see CSS)
+    - For responsiveness, one big step (small fonts, logo, 2 cols for picture at the bottom) is applied at 768px
+      viewport width. This is the step found in Bootstrap separating phones from tablets.
     - Shakespeare quote found on opensourceshakespeare.org using google
     - Images are from my own library on flickr : https://www.flickr.com/photos/ffivaz/
     - In modals, Lorem Ipsum placeholder text is from lipsum.com
     - Fonts (from google) and jQuery (from cdnjs) are linked from external sources
     - jQuery is used to scroll to the top from the bottom of the page
+    - overlay image has been done using Gimp (images/details_masque.xcf)
 -->
 <html>
 <head>
@@ -67,7 +70,7 @@ Here are a couple of general comments about the file.
             <figure data-toggle="modal" data-target="#bookModal">
                 <img src="images/project1_small.jpg"
                      srcset="images/project1_small.jpg 125w, images/project1_medium.jpg 250w, images/project1_large.jpg 500w"
-                     sizes="(min-width: 600px) 33.3vw, 50vw"
+                     sizes="(max-width: 768px) 50vw, 33.3vw"
                      class="img-responsive"
                      alt="A book">
                 <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
@@ -81,7 +84,7 @@ Here are a couple of general comments about the file.
             <figure data-toggle="modal" data-target="#brookModal">
                 <img src="images/project2_small.jpg"
                      srcset="images/project2_small.jpg 125w, images/project2_medium.jpg 250w, images/project2_large.jpg 500w"
-                     sizes="(min-width: 600px) 33.3vw, 50vw"
+                     sizes="(max-width: 768px) 50vw, 33.3vw"
                      class="img-responsive"
                      alt="A brook">
                 <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
@@ -94,7 +97,7 @@ Here are a couple of general comments about the file.
             <figure data-toggle="modal" data-target="#stoneModal">
                 <img src="images/project3_small.jpg"
                      srcset="images/project3_small.jpg 125w, images/project3_medium.jpg 250w, images/project3_large.jpg 500w"
-                     sizes="(min-width: 600px) 33.3vw, 50vw"
+                     sizes="(max-width: 768px) 50vw, 33.3vw"
                      class="img-responsive"
                      alt="A city place with a stone">
                 <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">

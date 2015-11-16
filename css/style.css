@@ -5,7 +5,8 @@
 }
 
 /* This is for small screens, tested on an iPhone 4 */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 28px;
         margin-top: 20px;
@@ -52,7 +53,8 @@
 }
 
 /* This is for larger screens, tested on a desktop, laptop and an iPad */
-@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 768px) {
     h1 {
         font-size: 52px;
         margin-top: 30px;
@@ -124,17 +126,20 @@ hr {
 /* As found on StackOverflow (http://stackoverflow.com/questions/21263800/image-overlay-on-responsive-sized-images-bootstrap),
 'position: relative' is required on a parent element of children with 'position: absolute'
 for the children to be positioned in relation to that parent. */
+
 figure {
     position: relative;
 }
 
-/* The modal is not linked using <a ...>, so we have to change the pointer */
+/* The modals are not linked using <a ...>, so we have to change the pointer */
+
 figure:hover {
     cursor: pointer;
 }
 
 /* To show the DETAILS image when the user is moving the mouse over, we have to position the
  image over the other. Opacity is used to hide the image when the mouse is not over. */
+
 .overlay-image {
     position: absolute;
     top: 0;

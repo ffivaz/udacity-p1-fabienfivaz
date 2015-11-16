@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!--
+Here are a couple of general comments about the file.
+    - Bootstrap is used for basic layout and responsiveness
+    - @media is used for responsiveness as well (see CSS)
+    - Shakespeare quote found on opensourceshakespeare.org using google
+    - Images are from my own library on flickr : https://www.flickr.com/photos/ffivaz/
+    - In modals, Lorem Ipsum placeholder text is from lipsum.com
+    - Fonts (from google) and jQuery (from cdnjs) are linked from external sources
+    - jQuery is used to scroll to the top from the bottom of the page
+-->
 <html>
 <head>
     <meta charset="utf-8">
@@ -54,10 +64,10 @@
     </div>
     <section class="row text-center">
         <div class="col-md-4  col-sm-4 col-xs-6">
-            <figure data-toggle="modal" data-target="#booksModal">
+            <figure data-toggle="modal" data-target="#bookModal">
                 <img src="images/project1_small.jpg"
                      srcset="images/project1_small.jpg 125w, images/project1_medium.jpg 250w, images/project1_large.jpg 500w"
-                     sizes="(min-width: 600px): 33.3vw, 50vw"
+                     sizes="(min-width: 600px) 33.3vw, 50vw"
                      class="img-responsive"
                      alt="A book">
                 <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
@@ -68,10 +78,10 @@
             <p><a href="http://github.com">Sources on Github</a></p>
         </div>
         <div class="col-md-4  col-sm-4 col-xs-6">
-            <figure data-toggle="modal" data-target="#riversModal">
+            <figure data-toggle="modal" data-target="#brookModal">
                 <img src="images/project2_small.jpg"
                      srcset="images/project2_small.jpg 125w, images/project2_medium.jpg 250w, images/project2_large.jpg 500w"
-                     sizes="(min-width: 600px): 33.3vw, 50vw"
+                     sizes="(min-width: 600px) 33.3vw, 50vw"
                      class="img-responsive"
                      alt="A brook">
                 <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
@@ -81,10 +91,10 @@
             <p><a href="http://github.com">Sources on Github</a></p>
         </div>
         <div class="col-md-4  col-sm-4 col-xs-6">
-            <figure data-toggle="modal" data-target="#citiesModal">
+            <figure data-toggle="modal" data-target="#stoneModal">
                 <img src="images/project3_small.jpg"
                      srcset="images/project3_small.jpg 125w, images/project3_medium.jpg 250w, images/project3_large.jpg 500w"
-                     sizes="(min-width: 600px): 33.3vw, 50vw"
+                     sizes="(min-width: 600px) 33.3vw, 50vw"
                      class="img-responsive"
                      alt="A city place with a stone">
                 <img src="images/details_masque.png" class="img-responsive overlay-image" alt="A hover image">
@@ -102,7 +112,7 @@
 </div>
 
 <!-- Modal for the first picture - book -->
-<div class="modal fade" id="booksModal" tabindex="-1" role="dialog" aria-labelledby="booksModal">
+<div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="bookModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -137,7 +147,7 @@
 </div>
 
 <!-- Modal for the second picture - brook -->
-<div class="modal fade" id="riversModal" tabindex="-1" role="dialog" aria-labelledby="riversModal">
+<div class="modal fade" id="brookModal" tabindex="-1" role="dialog" aria-labelledby="brookModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -172,7 +182,7 @@
 </div>
 
 <!-- Modal for the third picture - stone -->
-<div class="modal fade" id="citiesModal" tabindex="-1" role="dialog" aria-labelledby="citiesModal">
+<div class="modal fade" id="stoneModal" tabindex="-1" role="dialog" aria-labelledby="stoneModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

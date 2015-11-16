@@ -1,4 +1,4 @@
-<!-- This script scrolls back to the top when the button at the bottom is clicked. -->
+<!-- This script scrolls back to the top when the button at the bottom is clicked. It uses the jQuery library.-->
 $(document).ready(function() {
     console.log("ready!");
     $( "#back-to-top-button" ).click(function() {
